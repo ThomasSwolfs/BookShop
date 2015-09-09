@@ -95,6 +95,13 @@ environments {
     }
 }
 
+bookshop {
+    apihelper {
+        url = "http://213.187.246.178:8080/bookdata"
+        apiKey = "9f1fba0b4b5a51a6b583700e5c24699b"
+    }
+}
+
 // log4j configuration
 log4j.main = {
     // Example of changing the log pattern for the default console appender:

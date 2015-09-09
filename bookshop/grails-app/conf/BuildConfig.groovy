@@ -44,6 +44,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://repo1.maven.org/maven2/com/fasterxml/jackson/"
+        //mavenRepo "http://repository.codehaus.org/"
     }
 
     dependencies {
@@ -51,6 +53,7 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.6.0'
     }
 
     plugins {
@@ -62,6 +65,8 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.8'
         // asset-pipeline 2.0+ requires Java 7, use version 1.9.x with Java 6
         compile ":asset-pipeline:2.2.3"
+
+        compile ":rest:0.8"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.10" // or ":hibernate:3.6.10.18"
